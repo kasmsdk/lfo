@@ -2,7 +2,7 @@ import React, { useState, useRef } from 'react';
 import MidiSelector from '../latest/MidiSelector';
 import LFOCanvas from '../latest/LFOCanvas';
 import type { LFOCanvasHandle } from '../latest/LFOCanvas';
-import LatestDemo from '../src/components/LatestDemo';
+import LatestDemoLFO from '../src/components/LatestDemoLFO';
 import MidiKeyboard from '../src/components/MidiKeyboard';
 
 // Extend window type for inlet_5_emanator
@@ -44,7 +44,8 @@ const LFO: React.FC = () => {
         <div className="kasm-landing-container">
             <h1>LFO Sequence Browser and Editor Tool</h1>
             <p>
-                LFO is a continual automation</p>
+                Low Frequency Oscillators, periodically update MIDI CCs and Ableton Live mapped parameters</p>
+            <LatestDemoLFO />
             <p>
                 Pattern gallery/browser<br/>
                 {arpyCanvasRefs.current.map((ref, idx) => (
@@ -61,8 +62,6 @@ const LFO: React.FC = () => {
                 <MidiKeyboard onNoteOn={handleNoteOn} onNoteOff={handleNoteOff} />
             </div>
 
-
-            <LatestDemo />
         </div>
     );
 };
