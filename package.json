@@ -1,0 +1,33 @@
+{
+  "name": "kasm-lfo",
+  "version": "1.0.0",
+  "description": "This is the LFO (Low Frequency Oscillator) module for Kasm SDK",
+  "main": "index.js",
+  "devDependencies": {
+    "@testing-library/jest-dom": "^6.7.0",
+    "@testing-library/react": "^16.3.0",
+    "@vitejs/plugin-react": "^5.0.0",
+    "jsdom": "^26.1.0",
+    "react": "^19.1.1",
+    "react-dom": "^19.1.1",
+    "vite": "^7.1.2",
+    "vitest": "^3.2.4"
+  },
+  "scripts": {
+    "test": "vitest",
+    "dev": "vite",
+    "start:chrome": "vite & sleep 2 && open -a 'Google Chrome' http://localhost:5173"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kevleyski/kasm-emanator.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/kevleyski/kasm-emanator/issues"
+  },
+  "homepage": "https://github.com/kevleyski/kasm-emanator#readme"
+}

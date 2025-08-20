@@ -1,0 +1,14 @@
+/* LFO Styles */
+.emanator-section {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+
+.emanator-container {
+  display: flex;
+  height: 100%;
+  background: rgba(218, 190, 128, 0.8); /* Semi-transparent */
+  background-image: var(--sandstone-texture-coarse);
+}
+
