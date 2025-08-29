@@ -45,6 +45,22 @@ const LFO: React.FC = () => {
             <h1>LFO Sequence Browser and Editor Tool</h1>
             <p>
                 Low Frequency Oscillators, periodically update MIDI CCs and Ableton Live mapped parameters</p>
+            <div style={{ display: 'flex', alignItems: 'center', gap: '16px', margin: '16px 0' }}>
+                <button
+                    className="kasm-demo-btn"
+                    title="Download this LFO as Ableton Live 12.2 M4L device"
+                    onClick={() => {
+                        const link = document.createElement('a');
+                        link.href = '/latest/Kasm%20LFO.amxd';
+                        link.download = 'Kasm LFO.amxd';
+                        document.body.appendChild(link);
+                        link.click();
+                        document.body.removeChild(link);
+                    }}
+                >
+                    ⬇️<br/>Kasm LFO.amxd
+                </button>
+            </div>
             <LatestDemoLFO />
             <p>
                 Pattern gallery/browser<br/>
