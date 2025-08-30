@@ -47,7 +47,7 @@ const LFO: React.FC = () => {
                 Low Frequency Oscillators, periodically update MIDI CCs and Ableton Live mapped parameters</p>
             <div style={{ display: 'flex', alignItems: 'center', gap: '16px', margin: '16px 0' }}>
                 <button
-                    className="kasm-demo-btn"
+                    className="kasm-demo-btn-download"
                     title="Download this LFO as Ableton Live 12.2 M4L device"
                     onClick={() => {
                         const link = document.createElement('a');
